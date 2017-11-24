@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Installation</title>
+    <meta name="description" content="Quickest start (only requires MiniBrass and MiniZinc)  Download and install the newest MiniZinc IDE version from http://www.minizinc.org/  Download mbr2mzn.j...">
+
+
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/main.css">
+    <link rel="stylesheet" href="/jekyll-doc-theme/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" href="/jekyll-doc-theme/favicon.png?1">
+    <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>Installation | MiniBrass - Preferences for MiniZinc</title>
+<meta property="og:title" content="Installation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quickest start (only requires MiniBrass and MiniZinc) Download and install the newest MiniZinc IDE version from http://www.minizinc.org/ Download mbr2mzn.jar Download soft_constraints.zip and unpack it Locate the directory “./share/minizinc/std” of your MiniZinc installation Copy the directory “soft_constraints” into “./share/minizinc/std” Download and extract the code examples Compile the preference model by using java -jar mbr2mzn.jar -m smallexample_minizinc.mbr Run minizinc smallexample_minizinc.mzn : Your output should state" />
+<meta property="og:description" content="Quickest start (only requires MiniBrass and MiniZinc) Download and install the newest MiniZinc IDE version from http://www.minizinc.org/ Download mbr2mzn.jar Download soft_constraints.zip and unpack it Locate the directory “./share/minizinc/std” of your MiniZinc installation Copy the directory “soft_constraints” into “./share/minizinc/std” Download and extract the code examples Compile the preference model by using java -jar mbr2mzn.jar -m smallexample_minizinc.mbr Run minizinc smallexample_minizinc.mzn : Your output should state" />
+<link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/installation/" />
+<meta property="og:url" content="http://localhost:4000/jekyll-doc-theme/docs/installation/" />
+<meta property="og:site_name" content="MiniBrass - Preferences for MiniZinc" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-11-24T11:06:51+01:00" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"WebPage","headline":"Installation","datePublished":"2017-11-24T11:06:51+01:00","dateModified":"2017-11-24T11:06:51+01:00","description":"Quickest start (only requires MiniBrass and MiniZinc) Download and install the newest MiniZinc IDE version from http://www.minizinc.org/ Download mbr2mzn.jar Download soft_constraints.zip and unpack it Locate the directory “./share/minizinc/std” of your MiniZinc installation Copy the directory “soft_constraints” into “./share/minizinc/std” Download and extract the code examples Compile the preference model by using java -jar mbr2mzn.jar -m smallexample_minizinc.mbr Run minizinc smallexample_minizinc.mzn : Your output should state","url":"http://localhost:4000/jekyll-doc-theme/docs/installation/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="canonical" href="http://localhost:4000/jekyll-doc-theme/docs/installation/">
+    <link rel="alternate" type="application/rss+xml" title="MiniBrass - Preferences for MiniZinc" href="http://localhost:4000/jekyll-doc-theme/feed.xml" />
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container navbar-container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a class="navbar-brand" href="/jekyll-doc-theme/">
+                <span><img src="/jekyll-doc-theme/img/logonav.png"></span> <!-- MiniBrass - Preferences for MiniZinc -->
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li  class="active" ><a href="/jekyll-doc-theme/docs/home/">Docs</a></li>
+                <li ><a href="/jekyll-doc-theme/blog/2017/05/03/jekyll-doc-theme/">Blog</a></li>
+            </ul>
+            <span id="unilogos"><a href="http://www.isse.uni-augsburg.de/"><img id="isseImg" src="/jekyll-doc-theme/img/isse.png"/></a><a href="http://www.uni-augsburg.de/"><img id = "uniImg" src="/jekyll-doc-theme/img/uniaweb.png"/></a></span> 
+            <div class="navbar-right">
+               
+                <form class="navbar-form navbar-left">
+                    <div class="form-group has-feedback">
+                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search form-control-feedback"></i>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="https://github.com/aksakalli/jekyll-doc-theme"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+                  
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
+          Getting Started
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme/docs/home/">Welcome to MiniBrass</a>
+        
+          
+          
+          <a class="list-group-item active" href="/jekyll-doc-theme/docs/installation/">Installation</a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme/docs/helloworld/">Hello World</a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme/docs/troubleshooting/">Troubleshooting</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+          Examples
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme/docs/cheatsheet/">Markdown Cheatsheet</a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme/docs/font-awesome/">Font Awesome Icon List</a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme/docs/bootstrap/">Bootstrap Features</a>
+        
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+          Language Reference
+        </a>
+      </h4>
+    </div>
+    <div id="collapse-3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <ul class="list-group">
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme"></a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme"></a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme"></a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme"></a>
+        
+          
+          
+          <a class="list-group-item " href="/jekyll-doc-theme"></a>
+        
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+
+        <div class="col-md-8">
+            <h1>Installation</h1>
+            <div id="markdown-content-container"><h2 id="quickest-start-only-requires-minibrass-and-minizinc">Quickest start (only requires MiniBrass and MiniZinc)</h2>
+<ol>
+  <li>Download and install the newest MiniZinc IDE version from http://www.minizinc.org/</li>
+  <li>Download mbr2mzn.jar</li>
+  <li>Download soft_constraints.zip and unpack it</li>
+  <li>Locate the directory “./share/minizinc/std” of your MiniZinc installation</li>
+  <li>Copy the directory “soft_constraints” into “./share/minizinc/std”</li>
+  <li>Download and extract the code examples</li>
+  <li>Compile the preference model by using java -jar mbr2mzn.jar -m smallexample_minizinc.mbr</li>
+  <li>Run minizinc smallexample_minizinc.mzn : Your output should state</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>x = 1; y = 2; z = 1
+Valuations:  overall = 1
+----------
+==========
+</code></pre>
+</div>
+
+<h2 id="slightly-slower-start-requires-minibrass-minizinc-and-minisearch">Slightly slower start (requires MiniBrass, MiniZinc, and MiniSearch):</h2>
+
+<ol>
+  <li>Build MiniSearch according to the instructions at MiniSearch</li>
+  <li>Download mbr2mzn.jar</li>
+  <li>Download soft-constraints.zip and unpack it</li>
+  <li>Locate the directory “./share/minizinc/std” of your MiniSearch installation</li>
+  <li>Copy the directory “soft_constraints” into “./share/minizinc/std”</li>
+  <li>Download and extract the code examples</li>
+  <li>Compile the preference model by using java -jar mbr2mzn.jar smallexample_minisearch.mbr</li>
+  <li>Run minisearch smallexample_minisearch.mzn : Your output should state</li>
+</ol>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Intermediate solution:x = 1; y = 1; z = 1
+Valuations:  overall = 1..2
+----------
+Intermediate solution:x = 1; y = 1; z = 3
+Valuations:  overall = 1..1
+----------
+Intermediate solution:x = 1; y = 2; z = 1
+Valuations:  overall = 2..2
+----------
+==========
+</code></pre>
+</div>
+</div>
+            <p class="text-center">
+              <br />
+              <a target="_blank" href="https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages/_docs/installation.md" class="btn btn-default githubEditButton" role="button">
+                <i class="fa fa-pencil fa-lg"></i> Improve this page
+              </a>
+            </p>
+            <hr>
+            
+
+
+
+
+
+  
+  
+
+  
+  
+    <ul class="pager">
+      
+        
+        
+        <li class="previous">
+          <a href="/jekyll-doc-theme/docs/home/">
+            <span aria-hidden="true">&larr;</span> Previous
+          </a>
+        </li>
+      
+
+      
+        
+        
+        <li class="next">
+          <a href="/jekyll-doc-theme/docs/helloworld/">
+            Next <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      
+    </div>
+    <div class="clear"></div>
+    
+
+        </div>
+
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container">
+
+        <p class="text-center">
+            MiniBrass - Preferences for MiniZinc 2017 |
+            Powered by <a href="https://github.com/aksakalli/jekyll-doc-theme">Jekyll Doc Theme</a>
+        </p>
+        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
+    </div>
+</footer>
+
+    <script>
+  var baseurl = '/jekyll-doc-theme'
+</script>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/jekyll-doc-theme/js/bootstrap.min.js "></script>
+<script src="/jekyll-doc-theme/js/typeahead.bundle.min.js "></script>
+
+<script src="/jekyll-doc-theme/js/main.js "></script>
+
+</body>
+
+</html>
